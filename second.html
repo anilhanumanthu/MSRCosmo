@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="second.css"/>
+<script src="second.js"></script>
+</head>
+<body>
+<form onsubmit="verify();">
+<table width=75%>
+	<th></th><th>Registration Table</th>
+	<tr><td><label>First Name*</label></td><td><input type="text" required id="Fname"/></td></tr>
+	
+	<tr><td><label>Middle Name</label></td><td><input type="text" id="Mname"/></td></tr>
+	
+	<tr><td><label>Last Name*</label></td><td><input type="text" required id="Lname"/></td></tr>
+	
+	<tr><td><label>Email ID*</label></td><td><input pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" type="text" required id="Pword"/></td></tr>
+	
+	<tr><td><label>Mobile Number</label></td><td><input pattern="[0-9]{10}" type="text" id="Mobile"/></td></tr>
+	
+	<tr><td><label>Password*</label></td><td><input type="password" required id="pass"/></td></tr>
+	
+	<tr><td><label>Confirm Password*</label></td><td><input type="password" required id="confirmpass"/></td></tr>
+	
+	<tr><td></td><td><input type="submit" value="submit"/></td></tr>
+
+</table>
+</form>
+</body>
+</html>

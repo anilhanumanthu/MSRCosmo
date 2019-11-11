@@ -1,0 +1,20 @@
+.mainContainer{
+			margin-top:10%;
+			margin-left:25%;
+		}
+        input,a{
+            padding: 30px;
+            margin-left: 120px;
+            border: 2px solid rgb(10,40,30);
+            border-radius: 20px;
+            background-color: transparent;
+            text-align: center;
+			font-family:verdana;
+			text-decoration:none;
+            font-size: 30px;
+        }
+        ::placeholder {
+            color: #E9625E;
+            text-decoration: underline;
+            font-weight: bold;
+        }

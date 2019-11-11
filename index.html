@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        CRUD
+    </title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Class</th>
+							<th>Year</th>
+							<th>City</th>
+							<th>Country</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+			
+			<br/>
+	
+				
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+				<table width=75%>
+				
+                    <tr><div>
+                        <td><label>Student Id*</label></td>
+                        <td><input type="number" name="Id" required id="Id"></td>
+                    </div></tr>
+					
+					<tr><div>
+                        <td><label>Student Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label></td>
+                        <td><input type="text" pattern="[A-Za-z ]*" name="fullName" required id="fullName"></td>
+                    </div></tr>
+					
+                    <tr><div>
+                        <td><label>Email*</label></td>
+                        <td><input type="text" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" name="email" required id="email"></td>
+                    </div></tr>
+					
+                    <tr><div>
+                        <td><label>Class*</label></td>
+                        <td><input type="text" name="Class" required id="Class"></td>
+                    </div></tr>
+					
+					<tr><div>
+                        <td><label>Enrollment Year*</label></td>
+                        <td><input type="text" pattern= "[0-9]*" name="enrollyear" required id="enrollyear"></td>
+                    </div></tr>
+					
+					<tr><div>
+                        <td><label>City*</label></td>
+                        <td><input type="text" pattern="[a-zA-Z ]*" name="city" required id="city"></td>
+                    </div></tr>
+					
+					<tr><div>
+                        <td><label>Country*</label></td>
+                        <td><input type="text" pattern="[a-zA-Z ]*" name="country" required id="country"></td>
+                    </div></tr>
+					
+                    <tr><td></td><td><div  class="form-action-buttons">
+                        <input type="submit" value="Add"><input onclick="resetForm()" type="button" value="Clear">
+                    </div></td></tr>
+					</table>
+					</form>
+</body>
+
+</html>
